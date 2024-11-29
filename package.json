@@ -1,6 +1,6 @@
 {
     "name": "@mpietrucha/type",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "repository": "mpietrucha/type-js",
     "license": "MIT",
     "author": {
@@ -19,9 +19,13 @@
     "files": [
         "dist"
     ],
+    "scripts": {
+        "deploy": "npm run prettier && npm version patch --force && npx unbuild && npm publish && git push --tags",
+        "prettier": "npx prettier . --write"
+    },
     "prettier": "@mpietrucha/prettier-config",
     "dependencies": {
-        "@mpietrucha/closure": "^0.0.1",
+        "@mpietrucha/forward": "^0.0.1",
         "@mpietrucha/utils": "^0.0.1"
     },
     "devDependencies": {
