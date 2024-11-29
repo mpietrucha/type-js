@@ -1,0 +1,31 @@
+{
+    "name": "@mpietrucha/type",
+    "version": "0.0.1",
+    "repository": "mpietrucha/type-js",
+    "license": "MIT",
+    "author": {
+        "name": "Michał Pietrucha",
+        "email": "michal.pietrucha@off-site.pl"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "files": [
+        "dist"
+    ],
+    "prettier": "@mpietrucha/prettier-config",
+    "dependencies": {
+        "@mpietrucha/closure": "^0.0.1",
+        "@mpietrucha/utils": "^0.0.1"
+    },
+    "devDependencies": {
+        "@mpietrucha/prettier-config": "^0.0.3",
+        "unbuild": "^2.0.0"
+    }
+}
