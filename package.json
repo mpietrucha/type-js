@@ -19,9 +19,6 @@
     "files": [
         "dist"
     ],
-    "scripts": {
-        "prettier": "npx prettier . --write"
-    },
     "prettier": "@mpietrucha/prettier-config",
     "dependencies": {
         "@mpietrucha/forward": "^0.0.1",
