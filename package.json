@@ -20,7 +20,6 @@
         "dist"
     ],
     "scripts": {
-        "deploy": "npm run prettier && npm version patch --force && npx unbuild && npm publish && git push --tags",
         "prettier": "npx prettier . --write"
     },
     "prettier": "@mpietrucha/prettier-config",
